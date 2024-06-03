@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rifqi Portofolio</title>
+    <!-- Link CSS Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Style tambahan untuk tampilan -->
+    <style>
+      body {
+        scroll-behavior: smooth; /* Efek smooth scroll */
+      }
+      section {
+        padding: 100px 0; /* Padding untuk setiap section */
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover; /* Agar gambar memenuhi carousel */
+      }
+      .social-icons img {
+        width: 50px;
+        margin: 0 10px; /* Margin untuk ikon media sosial */
+      }
+      .navbar-nav .nav-item .nav-link {
+        transition: background-color 0.3s ease-in-out; /* Transisi untuk navbar item */
+      }
+      .navbar-nav .nav-item .nav-link:hover {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Hover effect untuk navbar item */
+      }
+      .card img {
+        height: 200px;
+        object-fit: cover; /* Agar gambar memenuhi card */
+      }
+      .card-body {
+        text-align: center; /* Center align untuk teks dalam card */
+      }
+      .navbar {
+        transition: top 0.3s; /* Transisi untuk navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Certificate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section About Me -->
+    <section id="about" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Carousel untuk foto -->
+          <div class="col-md-6">
+            <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="asset/fp.jpg" class="d-block w-100" alt="Photo 1" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="asset/fp2.jpg"
+                    class="d-block w-100"
+                    alt="Photo 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="asset/fp3.jpg"
+                    class="d-block w-100"
+                    alt="Your Photo 3"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#aboutCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#aboutCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- Data diri -->
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              <h2 class="text-center">Introduce</h2>
+              <p class="lead text-justify">
+                Greets, my name is Rifqi Ar Rasyid Rahadi Putra, I am a college
+                student bachelor at Sekolah Tinggi Teknik Malang majoring in
+                Informatic Engineering, I come from Sidoarjo and now I live in
+                Lesanpuro Gang 2, Kedungkandang, Malang City. Organized and
+                dependable Person, successful at managing multiple priorities
+                with a positive attitude. Technologically adept, offering
+                experience with many different social media platforms, office
+                technology programs, and advanced computer skills. Bringing
+                forth a positive attitude and motivation to learn new programs.
+                Willingness to take on added responsibilities to achieve team
+                goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Experience -->
+    <section id="experience" class="text-center">
+      <div class="container">
+        <h2 class="mb-5">Work Experience</h2>
+        <div class="row">
+          <!-- Card untuk setiap pengalaman kerja -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Internship</h5>
+                <p class="card-text">
+                  Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Kab.
+                  Malang <br />
+                  ( January 2024 - March 2024 )
+                </p>
+                <p class="card-text">Job Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Field Operator</h5>
+                <p class="card-text">
+                  PO. MTrans <br />
+                  (September 2023 - November 2023)
+                </p>
+                <p class="card-text">Job Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Admin & Packing</h5>
+                <p class="card-text">
+                  Alenna Store <br />
+                  (March 2020 - August 2020)
+                </p>
+                <p class="card-text">Job Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Production Operator</h5>
+                <p class="card-text">
+                  Yanti Cake & Cookies <br />
+                  (July 2019 - October 2019)
+                </p>
+                <p class="card-text">Job Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Production Operator</h5>
+                <p class="card-text">
+                  PT. Timber Kreasi <br />
+                  (October 2019 - November 2019)
+                </p>
+                <p class="card-text">Job Description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projects -->
+    <section id="projects" class="bg-light text-center">
+      <div class="container">
+        <h2 class="mb-5">Projects</h2>
+        <div class="row">
+          <!-- Card untuk setiap proyek -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/smph.jpg"
+                class="card-img-top"
+                alt="Project Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Automatic Trash Based on Arduino</h5>
+                <p class="card-text text-justify">
+                  The Arduino-based automatic trash can uses an Arduino Mega
+                  2560, speaker, mini DF player, servo and ultrasonic sensor.
+                  When at a distance of 10 cm the sensor will detect and the
+                  trash can will automatically open along with the sound of the
+                  speaker, when the object is out of range (10cm) the trash can
+                  will close automatically along with the sound of the speaker.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/mbl.jpg"
+                class="card-img-top"
+                alt="Project Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bluetooth Control Car Based on Arduino
+                </h5>
+                <p class="card-text text-justify">
+                  Bluetooth remote control car using Arduino Mega 2560, HC 05
+                  Bluetooth model, L2896 motor driver, ultrasonic sensor. This
+                  car has 2 modes, the first mode uses a distance sensor, with
+                  this mode the car will automatically move forward and avoid
+                  the obstacle. the second is Bluetooth mode which can be
+                  activated and controlled via the available application to go
+                  forward, backward and turn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/tnmn.jpg"
+                class="card-img-top"
+                alt="Project Image 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Automatic Plant Watering System Based on Arduino
+                </h5>
+                <p class="card-text text-justify">
+                  Automatic plant waterer using an Arduino Mega 2560, soil
+                  moisture sensor, relay, and electric pump. The sensor is
+                  plugged into the ground to measure the humidity of the soil.
+                  When the humidity of a plant is low, the relay will turn on
+                  and the pump will release water to water the plant. When the
+                  humidity is right, the relay turns off and the pump also turns
+                  off.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/shujan.jpg"
+                class="card-img-top"
+                alt="Project Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Learning Media Application “SI HUJAN“
+                </h5>
+                <p class="card-text text-justify">
+                  The learning media application "SI HUJAN" is .apk based which
+                  can be installed on Android. Created using the smart apps
+                  creator, there are 3 menus, materi menu containing
+                  explanations about the occurrence of rain, a quiz menu
+                  containing interactive and interesting quizzes about the
+                  occurrence of rain, and a guide menu for using the "SI HUJAN"
+                  application.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/vania.png"
+                class="card-img-top"
+                alt="Project Image 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Inventory Application at Vania Shop</h5>
+                <p class="card-text text-justify">
+                  The store inventory application at the Vania store, created
+                  using Microsoft Access, has 4 buttons, the master data button
+                  is used to add items, the transaction button is used for
+                  purchase and sales transactions, the report button is used to
+                  view stock reports and reports of transactions that occur, and
+                  the exit button is used to exit. from the application
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Certificates -->
+    <section id="certificates" class="text-center">
+      <div class="container">
+        <h2 class="mb-5">Certificates</h2>
+        <div class="row">
+          <!-- Card untuk setiap sertifikat -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/bkpsdm.jpg"
+                class="card-img-top"
+                alt="Certificate Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Certificate Title 1</h5>
+                <p class="card-text">Certificate Description 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/htmlcss.jpg"
+                class="card-img-top"
+                alt="Certificate Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Certificate Title 2</h5>
+                <p class="card-text">Certificate Description 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/js.jpg"
+                class="card-img-top"
+                alt="Certificate Image 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Certificate Title 3</h5>
+                <p class="card-text">Certificate Description 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/python.jpg"
+                class="card-img-top"
+                alt="Certificate Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Certificate Title 4</h5>
+                <p class="card-text">Certificate Description 4</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img
+                src="asset/toefl.jpg"
+                class="card-img-top"
+                alt="Certificate Image 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Certificate Title 5</h5>
+                <p class="card-text">Certificate Description 5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact Me -->
+    <section id="contact" class="bg-light text-center">
+      <div class="container">
+        <h2 class="mb-5">Contact Me</h2>
+        <p class="social-icons">
+          <!-- Ikon media sosial -->
+          <a href="https://www.instagram.com/rifqiarrasyeed" target="_blank"
+            ><i class="fab fa-instagram"></i> @rifqiarrasyeed</a
+          >
+          <a href="https://wa.me/089687304266" target="_blank"
+            ><i class="fab fa-whatsapp"></i> +6289687304266</a
+          >
+          <a href="https://www.facebook.com/rifqiarrasyeed" target="_blank"
+            ><i class="fab fa-facebook"></i> Rifqi Ar Rasyid</a
+          >
+          <a href="https://github.com/rifqitheprodigy" target="_blank">
+            <i class="fab fa-github"></i> rifqitheprodigy</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Link JavaScript Bootstrap dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
