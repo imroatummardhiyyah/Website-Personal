@@ -1,0 +1,18 @@
+setting up git
+install git bash > enable experimental support for pseudo consoles
+set up username > gitbash > git config --global user.name "name"
+set up email > gitbash > git config --global user.email "email"
+
+setting up authentication
+download github cli 
+git authentication > gh auth login > https
+
+connect github
+git clone {url}
+git checkout -b new_branch
+git remote add upstream {URL}
+make changes
+git add {file name}
+git commit -m "test1"
+list remote > git remote -v 
+git push
